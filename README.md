@@ -8,8 +8,8 @@
 This boilerplate helps you quickly start a production ready plugin for GrapesJS. If you don't know from where to start, check this guide [Creating plugins](https://grapesjs.com/docs/modules/Plugins.html). Sections below are also used as boilerplate for your README, follow these steps below
 
 ### Usage
-1. Clone this repository `git clone https://github.com/artf/grapesjs-plugin-boilerplate.git YOUR-PLUGIN-NAME`
-1. Replace in all files `YOUR-PLUGIN-NAME` and `grapesjs-plugin-boilerplate` with your plugin name.
+1. Clone this repository `git clone https://github.com/pepiuox/grapesjs-bootstrap-elements.git`
+1. Replace in all files `grapesjs-bootstrap-elements` and `grapesjs-plugin-boilerplate` with your plugin name.
   **The name of your plugin depends on the `name` key in your `package.json`**
 1. Update all the data in `package.json`
 1. Install dependencies `npm i` and run the local server `npm start`
@@ -24,7 +24,7 @@ This boilerplate helps you quickly start a production ready plugin for GrapesJS.
 
 ## Summary
 
-* Plugin name: `YOUR-PLUGIN-NAME`
+* Plugin name: `grapesjs-bootstrap-elements`
 * Components
   * `new-component1`
   * `new-component2`
@@ -50,11 +50,11 @@ This boilerplate helps you quickly start a production ready plugin for GrapesJS.
 ## Download
 
 * CDN
-  * `https://unpkg.com/YOUR-PLUGIN-NAME`
+  * `https://unpkg.com/grapesjs-bootstrap-elements`
 * NPM
-  * `npm i YOUR-PLUGIN-NAME`
+  * `npm i grapesjs-bootstrap-elements`
 * GIT
-  * `git clone https://github.com/YOUR-NAME/YOUR-PLUGIN-NAME.git`
+  * `git clone https://github.com/pepiuox/grapesjs-bootstrap-elements.git`
 
 
 
@@ -66,7 +66,7 @@ Directly in the browser
 ```html
 <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
 <script src="https://unpkg.com/grapesjs"></script>
-<script src="path/to/YOUR-PLUGIN-NAME.min.js"></script>
+<script src="path/to/grapesjs-bootstrap-elements.min.js"></script>
 
 <div id="gjs"></div>
 
@@ -74,9 +74,9 @@ Directly in the browser
   var editor = grapesjs.init({
       container : '#gjs',
       // ...
-      plugins: ['YOUR-PLUGIN-NAME'],
+      plugins: ['grapesjs-bootstrap-elements'],
       pluginsOpts: {
-        'YOUR-PLUGIN-NAME': { /* options */ }
+        'grapesjs-bootstrap-elements': { /* options */ }
       }
   });
 </script>
@@ -85,18 +85,18 @@ Directly in the browser
 Modern javascript
 ```js
 import grapesjs from 'grapesjs';
-import yourPluginName from 'YOUR-PLUGIN-NAME';
+import yourPluginName from 'grapesjs-bootstrap-elements';
 
 const editor = grapesjs.init({
   container : '#gjs',
   // ...
-  plugins: [yourPluginName],
+  plugins: [grapesjs-bootstrap-elements],
   pluginsOpts: {
-    [yourPluginName]: { /* options */ }
+    [grapesjs-bootstrap-elements]: { /* options */ }
   }
   // or
   plugins: [
-    editor => yourPluginName(editor, { /* options */ }),
+    editor => grapesjs-bootstrap-elements(editor, { /* options */ }),
   ],
 });
 ```
@@ -110,8 +110,8 @@ const editor = grapesjs.init({
 Clone the repository
 
 ```sh
-$ git clone https://github.com/YOUR-NAME/YOUR-PLUGIN-NAME.git
-$ cd YOUR-PLUGIN-NAME
+$ git clone https://github.com/pepiuox/grapesjs-bootstrap-elements.git
+$ cd grapesjs-bootstrap-elements
 ```
 
 Install dependencies
